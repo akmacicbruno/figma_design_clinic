@@ -3,6 +3,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Doctors Clinic Website UI</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -13,7 +14,7 @@
             <div class="navbar__title">
                 <a href="#" class="navbar__title-item">Airi Health</a>
             </div>
-            <div class="navbar__links">
+            <div class="navbar__links" id="links">
                 <div class="navbar__links-active">
                     <a href="#" class="navbar__link-item navbar__link-item--active">Home<span class="navbar__link-item--active-dot"><img src="img/Ellipse 249.svg"></span></a>
                 </div>
@@ -21,13 +22,23 @@
                 <a href="#" class="navbar__link-item">Clinic</a>
                 <a href="#" class="navbar__link-item">Doctors</a>
                 <a href="#" class="navbar__link-item">Contact</a>
+                
             </div>
-            <div class="navbar__login">
+            <div class="navbar__login" id="login">
                 <a href="#" class="navbar__link-item navbar__link-item--login">Log In</a>
                 <button type="button" class="navbar__link-item navbar__link-item--register">Register</button>
             </div>
+            <a href="javascript:void(0);" class="icon" id="hamburger" onclick="Animation()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="javascript:void(0);" class="icon-close" id="close" onclick="AnimationClose()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
-        <div class="content">
+        <div class="content" id="content">
+            <div class="content-img">
+                <img class="content-img__img" src="img/Hero Image.png">
+            </div>
             <div class="content__text">
                 <p style="margin:0px">Booking of doctor’s appointment</p>
             </div>
@@ -36,9 +47,6 @@
             </div>
             <div class="content__text-desc">
                 <p style="margin:0px">We want to make sure that everyone has access to natural and effective care. With our special, you’ll receive a consultation and a digital posture assesment.</p>
-            </div>
-            <div class="content-img">
-                <img class="content-img__img" src="img/Hero Image.png">
             </div>
             <div class="content__contact">
                 <div class="content__contact-img">
@@ -64,6 +72,6 @@
                 </div>
             </div>
         </div>
-        
+        <script src="js/animation.js"></script>
     </body>
 </html>
