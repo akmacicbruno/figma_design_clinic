@@ -3,12 +3,13 @@
     font-family: sans-serif;
 }
 body{
-    width: 100%;
-    height: 899px;
+    width: 100vw;
+    height: 100vh;
     display: inline-flex;
     font-family: sans-serif;
     margin: 0px;
     overflow-x: hidden;
+    position: relative;
 }
 .body__vector-left-down{
     position: absolute;
@@ -74,7 +75,7 @@ body{
 }
 .navbar{
     position: absolute;
-    width: 90%;
+    width: 90vw;
     height: 52px;
     left: 5%;
     top: 37px;
@@ -212,7 +213,6 @@ body{
     position: absolute;
     display: inline-flex;
     float: right;
-    top: 30px;
     right: 725px;
 }
 .content-img__img{
@@ -366,6 +366,7 @@ body{
     .content{
         left: 0px;
         margin-left: 5%;
+        margin-right: 5%;
         width: fit-content;
         top: 100px;
     }
